@@ -1,0 +1,66 @@
+.blogs-item{
+    width: 90%;
+    margin: 40px;
+    background-color: #fff;
+    height: auto;
+	border: none;
+    border-radius: 10px;
+    height: 200px;
+}
+.blogs-cover{
+    width: 120px;
+    height: 120px;
+    border-radius: 6px;
+    overflow: hidden;
+    float: left;
+    margin: 10px;
+    margin-top: 40px;
+}
+.blogs-cover img{
+    width: 100%;
+    display: block;
+}
+.blog-info{
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: solid gray 1px; 
+    
+}
+.blog-info .blog-title{
+    margin: 10px;
+    margin-top: 20px;
+}
+.blog-info .duration{
+    margin: 10px;
+}
+.describe a :hover{
+    color: #ffa07f;
+}
+.blog-more{
+    background-color: #fff;
+}
+.load_more {
+    margin-top: 0px;
+    margin-bottom: 140px;
+    
+}
+.more :hover{
+    color: #ffa07f;
+}
+.load_more_button {
+    width: 118px;
+    height: 36px;
+    border: solid 1px #d7d7d7;
+    border-radius: 18px;
+    margin: 0 auto;
+    line-height: 32px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    background-color: #fff;
+}
+.text-center {
+    text-align: center!important;
+}

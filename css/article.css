@@ -1,0 +1,14 @@
+.article {
+    padding-left: 69px;
+    padding-top: 59px;
+    padding-right: 68px;
+    padding-bottom: 45px;
+    background: #FFFFFF;
+    border-radius: 6px;
+}
+.article-p {
+    font-size: 16px;
+    line-height: 1.875;
+    color: rgba(0,0,0,0.8);
+    margin-bottom: 5%;
+}
