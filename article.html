@@ -1,206 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fun world!</title>
 
-    
+
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/article.css">
 </head>
-<body>
-   <div class="body-container">
-       <!-- 导航栏 -->
-       <header class="header scrolled">
-            <div class="container">
-                    <div class="row">
-                            <div class="col">
-                                <div class="header_content d-flex align-items-center">
-                                    <div class="logo"><a href="#">Fun world!</a></div>
-                                    <nav class="main_nav">
-                                        <ul class="one">
-                                            <li class="active"><a href="index.html">首页</a></li>
-                                            <li>|</li>
-                                            <li>
-                                                <a href="life.html">生活礼记</a>
-                                            </li>
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="about.html">关于我</a></li>
-                                        </ul>
-                                    </nav>
-                                    <div class="search_container ml-auto">
-                                        <div class="weather">
-                                            <div class="temperature">+10°</div>
-                                            <img class="weather_icon" src="images/cloud.png" alt="">
-                                        </div>
-                                        <form action="#">
-                                            <input type="search" class="header_search_input" required="required" placeholder="">
-                                            <img class="header_search_icon" src="images/search.png" alt="">
-                                        </form>
-                                        
-                                    </div>
-                                    <div class="hamburger ml-auto menu_mm">
-                                        <i class="fa fa-bars trans_200 menu_mm" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-            </div>
-       </header>
-    <!-- Home -->
 
-    <div class="home">
-		<div class="home_background parallax-window" >
-            <img src="images/home4.jpg" alt="" >
-        </div>
-    </div>
-    <div class="page-content">    
-        <div class="container">
+<body>
+    <div class="body-container">
+        <!-- 导航栏 -->
+        <header class="header scrolled">
+            <div class="container">
                 <div class="row">
-                        <div class="left">
-                                <div class="left-content">
-                                        <div class="article">
-                                                <div class="books-title">
-                                                    <h5>句子相似度的计算方法</h5>
-                                                </div>
-                                                <div class="line"></div>
-                                                <div class="article-p">
-                                                    2019年5月20日
-                                                    <span class="label label-primary">学习笔记</span>
-                                                </div>
-                                            <div class="article-p">
-                                              <p>
-                                                在做自然语言处理的过程中，我们经常会遇到需要找出相似语句的场景，或者找出句子的近似表达，这时候我们就需要把类似的句子归到一起，这里面就涉及到句子相似度计算的问题，那么本节就来了解一下怎么样来用 Python 实现句子相似度的计算。
-                                            </p> 
-                                            </div>
-                                            <div class="article-p">
-                                                <h5>编辑距离计算</h5>
-                                                <p>
-                                                编辑距离，英文叫做 Edit Distance，又称 Levenshtein 距离，是指两个字串之间，由一个转成另一个所需的最少编辑操作次数，如果它们的距离越大，说明它们越是不同。许可的编辑操作包括将一个字符替换成另一个字符，插入一个字符，删除一个字符。
-                                            </p>
-                                        </div>
-                                        
-                                        <div class="article-p">
-                                            <h5>杰卡德系数计算</h5>
-                                            <p>
-                                                杰卡德系数，英文叫做 Jaccard index, 又称为 Jaccard 相似系数，用于比较有限样本集之间的相似性与差异性。Jaccard 系数值越大，样本相似度越高。实际上它的计算方式非常简单，就是两个样本的交集除以并集得到的数值，当两个样本完全一致时，结果为 1，当两个样本完全不同时，结果为 0。
-                                            </p>
-                                        </div>
-                                        <div class="article-p">
-                                            <h5>TFIDF 系数</h5>
-                                            <p>另外除了计算 TF 系数我们还可以计算 TFIDF 系数，TFIDF 实际上就是在词频 TF 的基础上再加入 IDF 的信息，IDF 称为逆文档频率，不了解的可以看下 <span> <a href="http://www.ruanyifeng.com/blog/2013/03/tf-idf.html">阮一峰老师的讲解</a></span>，里面对 TFIDF 的讲解也是十分透彻的。 </p>
-                                        </div>
-                                        <div class="article-p">
-                                            <h5>Word2Vec</h5>
-                                            <p>Word2Vec，顾名思义，其实就是将每一个词转换为向量的过程。如果不了解的话可以参考<span><a href="https://blog.csdn.net/itplus/article/details/37969519">链接</a></span></p>
-                                        </div>
-                                        <div class="article-p">
-                                            <p>另外学术界还有一些可能更好的研究成果，这个可以参考 <span><a href="https://www.zhihu.com/question/29978268/answer/54399062">知乎</a></span> 上的一些回答。以上便是进行句子相似度计算的基本方法和 Python 实现，本节代码地址在 <span><a href="https://github.com/AIDeepLearning/SentenceDistance">这里</a></span> 。</p>
-                                        </div>
-									</div>
-							</div>
-						</div>
-						
-                        <div class="right">
-                            <div class="right-content">
-                                <div class="my-info">
-                                    <div class="my-logo">
-                                        <img src="images/my-logo.jpg" alt=""  class="img-rounded">
-                                    </div>
-                                    <nav class="site-state">
-                                            <div class="site-state-item">
-                                              <a href="blog.html">
-                                                <span class="site-state-item-count">286</span>
-                                                <span class="site-state-item-name">Blog</span>
-                                              </a>
-                                            </div>
-                                            <div class="site-state-item ">
-                                                <span class="site-state-item-count">2</span>
-                                                <span class="site-state-item-name">图集</span>
-                                              
-                                            </div>
-                                            <div class="site-state-item">
-                                                <span class="site-state-item-count">10</span>
-                                                <span class="site-state-item-name">标签</span>
-                                            </div>
-                                        </nav>
-                                    <div class="brief-info">
-                                        <span class="name">
-                                        <p>Rainie Zhang</p></span>
-                                        <span class="email">
-                                            <p>Email:1142698980@qq.com</p>
-                                        </span>
-                                    </div>
+                    <div class="col">
+                        <div class="header_content d-flex align-items-center">
+                            <div class="logo"><a href="#">Fun world!</a></div>
+                            <nav class="main_nav">
+                                <ul class="one">
+                                    <li class="active"><a href="index.html">首页</a></li>
+                                    <li>|</li>
+                                    <li>
+                                        <a href="life.html">生活礼记</a>
+                                    </li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="about.html">关于我</a></li>
+                                </ul>
+                            </nav>
+                            <div class="search_container ml-auto">
+                                <div class="weather">
+                                    <div class="temperature">+10°</div>
+                                    <img class="weather_icon" src="images/cloud.png" alt="">
                                 </div>
-                                <div class="fun-world" >
-										<div class="fun-world-body">
-											<div class="fun-world-title"><a href="index.html">THE ONLY FAIR IS NOT FAIR 
-                                                HELLO WORLD   </a></div>
-										</div>
-									</div>
-                                </div>
-                                       <!-- 标签 -->
-                                
-                                <div class="right-content-tags">
-                                        <div class="tags-list">
-                                            <div class="tags-title">
-                                                标签
-                                            </div>
-                                            <div class="line"></div>
-                                            <div class="tags-content">
-                                                    <ul>
-                                                            <li><a href="#">学习笔记</a></li>
-                                                            <li><a href="#">Spring Boot</a></li>
-                                                            <li><a href="#">Java</a></li>
-                                                            <li><a href="#">Java script</a></li>
-                                                            <li><a href="#">Python</a></li>
-                                                            <li><a href="#">CSS</a></li>
-                                                            <li><a href="#">C#</a></li>
-                                                            <li><a href="#">自然语言处理</a></li>
-                                                            <li><a href="#">深度学习</a></li>
-                                                            <li><a href="#">推荐系统</a></li>
-    
-                                                    </ul>    
-                                            </div>
-                                        </div>
-                                    </div>
-                                <div class="right-content-contact">
-                                            <div class="contact-title">
-                                                留言
-                                            </div>
-                                            <div class="line"></div>
-                                            <div class="contact-content">
-                                                <form action="" method="post">
-                                                    <div class="nickname">
-                                                        <input type="text" id="name" name="nickname" placeholder="昵称">
-                                                    </div>
-                                                    <div class="Email">
-                                                            <input type="email" id="email" name="email"  placeholder="Email">
-                                                    </div>
-                                                        <textarea name="message" id="" cols="15" rows="5" placeholder="输入……">
-                                                        </textarea>
-                                                    <div class="load_more">
-                                                             <div class="btn-more">确 认</div>
-                                                     </div>
-                                                </form>
-                                            </div>
-                                    </div>
+                                <form action="#">
+                                    <input type="search" class="header_search_input" required="required" placeholder="">
+                                    <img class="header_search_icon" src="images/search.png" alt="">
+                                </form>
+
                             </div>
+                            <div class="hamburger ml-auto menu_mm">
+                                <i class="fa fa-bars trans_200 menu_mm" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </header>
+        <!-- Home -->
+
+        <div class="home">
+            <div class="home_background parallax-window">
+                <img src="images/home4.jpg" alt="">
             </div>
         </div>
-    </div>
-    
-        
-   </div> 
-   <div class="footer">
-        <div class="footer-content">
-                <div class="footer-logo">
-                    <a href="#">FUN WORLD!</a>
+        <div class="page-content">
+            <div class="container">
+                <div class="row">
+                    <div class="left">
+                        <div class="left-content">
+                            <div class="article">
+                                <div class="books-title">
+                                    <h5>句子相似度的计算方法</h5>
+                                </div>
+                                <div class="line"></div>
+                                <div class="article-p">
+                                    2019年5月20日
+                                    <span class="label label-primary">学习笔记</span>
+                                </div>
+                                <div class="article-p">
+                                    <p>
+                                        在做自然语言处理的过程中，我们经常会遇到需要找出相似语句的场景，或者找出句子的近似表达，这时候我们就需要把类似的句子归到一起，这里面就涉及到句子相似度计算的问题，那么本节就来了解一下怎么样来用
+                                        Python 实现句子相似度的计算。
+                                    </p>
+                                </div>
+                                <div class="article-p">
+                                    <h5>编辑距离计算</h5>
+                                    <p>
+                                        编辑距离，英文叫做 Edit Distance，又称 Levenshtein
+                                        距离，是指两个字串之间，由一个转成另一个所需的最少编辑操作次数，如果它们的距离越大，说明它们越是不同。许可的编辑操作包括将一个字符替换成另一个字符，插入一个字符，删除一个字符。
+                                    </p>
+                                </div>
+
+                                <div class="article-p">
+                                    <h5>杰卡德系数计算</h5>
+                                    <p>
+                                        杰卡德系数，英文叫做 Jaccard index, 又称为 Jaccard 相似系数，用于比较有限样本集之间的相似性与差异性。Jaccard
+                                        系数值越大，样本相似度越高。实际上它的计算方式非常简单，就是两个样本的交集除以并集得到的数值，当两个样本完全一致时，结果为 1，当两个样本完全不同时，结果为
+                                        0。
+                                    </p>
+                                </div>
+                                <div class="article-p">
+                                    <h5>TFIDF 系数</h5>
+                                    <p>另外除了计算 TF 系数我们还可以计算 TFIDF 系数，TFIDF 实际上就是在词频 TF 的基础上再加入 IDF 的信息，IDF
+                                        称为逆文档频率，不了解的可以看下 <span> <a
+                                                href="http://www.ruanyifeng.com/blog/2013/03/tf-idf.html">阮一峰老师的讲解</a></span>，里面对
+                                        TFIDF 的讲解也是十分透彻的。 </p>
+                                </div>
+                                <div class="article-p">
+                                    <h5>Word2Vec</h5>
+                                    <p>Word2Vec，顾名思义，其实就是将每一个词转换为向量的过程。如果不了解的话可以参考<span><a
+                                                href="https://blog.csdn.net/itplus/article/details/37969519">链接</a></span>
+                                    </p>
+                                </div>
+                                <div class="article-p">
+                                    <p>另外学术界还有一些可能更好的研究成果，这个可以参考 <span><a
+                                                href="https://www.zhihu.com/question/29978268/answer/54399062">知乎</a></span>
+                                        上的一些回答。以上便是进行句子相似度计算的基本方法和 Python 实现，本节代码地址在 <span><a
+                                                href="https://github.com/AIDeepLearning/SentenceDistance">这里</a></span>
+                                        。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div class="right-content">
+                            <div class="my-info">
+                                <div class="my-logo">
+                                    <img src="images/my-logo.jpg" alt="" class="img-rounded">
+                                </div>
+                                <nav class="site-state">
+                                    <div class="site-state-item">
+                                        <a href="blog.html">
+                                            <span class="site-state-item-count">286</span>
+                                            <span class="site-state-item-name">Blog</span>
+                                        </a>
+                                    </div>
+                                    <div class="site-state-item ">
+                                        <span class="site-state-item-count">2</span>
+                                        <span class="site-state-item-name">图集</span>
+
+                                    </div>
+                                    <div class="site-state-item">
+                                        <span class="site-state-item-count">10</span>
+                                        <span class="site-state-item-name">标签</span>
+                                    </div>
+                                </nav>
+                                <div class="brief-info">
+                                    <span class="name">
+                                        <p>Rainie Zhang</p>
+                                    </span>
+                                    <span class="email">
+                                        <p>Email:1142698980@qq.com</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="fun-world">
+                                <div class="fun-world-body">
+                                    <div class="fun-world-title"><a href="index.html">THE ONLY FAIR IS NOT FAIR
+                                            HELLO WORLD </a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 标签 -->
+
+                        <div class="right-content-tags">
+                            <div class="tags-list">
+                                <div class="tags-title">
+                                    标签
+                                </div>
+                                <div class="line"></div>
+                                <div class="tags-content">
+                                    <ul>
+                                        <li><a href="#">学习笔记</a></li>
+                                        <li><a href="#">Spring Boot</a></li>
+                                        <li><a href="#">Java</a></li>
+                                        <li><a href="#">Java script</a></li>
+                                        <li><a href="#">Python</a></li>
+                                        <li><a href="#">CSS</a></li>
+                                        <li><a href="#">C#</a></li>
+                                        <li><a href="#">自然语言处理</a></li>
+                                        <li><a href="#">深度学习</a></li>
+                                        <li><a href="#">推荐系统</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-content-contact">
+                            <div class="contact-title">
+                                留言
+                            </div>
+                            <div class="line"></div>
+                            <div class="contact-content">
+                                <form action="" method="post">
+                                    <div class="nickname">
+                                        <input type="text" id="name" name="nickname" placeholder="昵称">
+                                    </div>
+                                    <div class="Email">
+                                        <input type="email" id="email" name="email" placeholder="Email">
+                                    </div>
+                                    <textarea name="message" id="" cols="15" rows="5" placeholder="输入……">
+                                                        </textarea>
+                                    <div class="load_more">
+                                        <div class="btn-more">确 认</div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="#">FUN WORLD!</a>
+            </div>
         </div>
 
     </div>
 </body>
+
 </html>
